@@ -1,0 +1,21 @@
+.modal-btn {
+    background: cornflowerblue;
+    border: none;
+    margin: 560px;
+    margin-top: 20px !important;
+    height: 40px;
+    width: 150px;
+    display: flex;
+}
+
+.btnadd {
+    border: none;
+
+    margin: 650px;
+    margin-bottom: 0;
+}
+
+.btnadd:hover {
+    background-color: none;
+    border: none;
+}
