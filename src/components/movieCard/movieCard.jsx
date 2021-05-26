@@ -14,7 +14,7 @@ function MovieCard({ movie }) {
                 />
                 <Card.Body>
                     <Card.Title>{movie.title} </Card.Title>
-                    <ReactStars value={movie.rate} />
+                    <p>{"⭐".repeat(movie.rate)}</p>
                     <Card.Text className="description-container">
                         {movie.description}
                     </Card.Text>
