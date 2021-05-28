@@ -1,5 +1,4 @@
 import React from "react";
-import AddModal from "../AddModal/AddModal";
 import MovieCard from "../movieCard/movieCard";
 import "./MoviesList.css";
 

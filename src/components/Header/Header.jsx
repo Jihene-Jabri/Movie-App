@@ -19,10 +19,10 @@ function Header({ getTitleSearch, getRateSearch }) {
                     <h2>Trending Movies</h2>
                 </Navbar.Brand>
                 <Nav className="mr-auto">
-                    <Nav.Link href="#home">
+                    <Nav.Link href="/">
                         <h4>Home</h4>
                     </Nav.Link>
-                    <Nav.Link href="#trailers">
+                    <Nav.Link href="/trailers">
                         <h4>Trailers</h4>{" "}
                     </Nav.Link>
                 </Nav>

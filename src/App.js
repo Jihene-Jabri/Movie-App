@@ -5,8 +5,10 @@ import Header from "./components/Header/Header";
 import MoviesList from "./components/MoviesList/moviesList";
 import AddModal from "./components/AddModal/AddModal";
 import { moviesData } from "./components/moviesData";
+import Trailer from "./components/Trailers/TrailerPage";
+import { Route, Switch } from "react-router-dom";
 
-function App() {
+function App({ match }) {
     const [titleSearch, setTitleSearch] = useState("");
     const getTitleSearch = (input) => {
         setTitleSearch(input);
@@ -20,7 +22,6 @@ function App() {
         if (
             newMovie.title !== "" &&
             newMovie.description !== "" &&
-            newMovie.date !== "" &&
             newMovie.posterUrl !== "" &&
             newMovie.rate !== 0
         ) {
@@ -36,14 +37,27 @@ function App() {
                 getTitleSearch={getTitleSearch}
                 getRateSearch={getRateSearch}
             />
-
             <div className="app-body">
                 <AddModal handleAddMovie={handleAddMovie} />
-                <MoviesList
-                    newMoviesData={newMoviesData}
-                    titleSearch={titleSearch}
-                    rateSearch={rateSearch}
-                />
+                <Switch>
+                    <Route
+                        exact
+                        path="/"
+                        render={() => (
+                            <MoviesList
+                                newMoviesData={newMoviesData}
+                                titleSearch={titleSearch}
+                                rateSearch={rateSearch}
+                            />
+                        )}
+                    />
+                    <Route
+                        path="/trailers/:id"
+                        render={() => (
+                            <Trailer movie={newMoviesData} match={match} />
+                        )}
+                    />
+                </Switch>
             </div>
         </div>
     );
