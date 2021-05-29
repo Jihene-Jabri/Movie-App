@@ -23,7 +23,7 @@ function Header({ getTitleSearch, getRateSearch }) {
                         <h4>Home</h4>
                     </Nav.Link>
                     <Nav.Link href="/trailers">
-                        <h4>Trailers</h4>{" "}
+                        <h4>Movies</h4>{" "}
                     </Nav.Link>
                 </Nav>
                 <Form inline className="SearchContainer">

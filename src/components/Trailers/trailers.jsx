@@ -1,14 +1,3 @@
-import React from "react";
-
-function Trailers() {
-    return;
-    <div>
-        <h1>Hello</h1>
-    </div>;
-}
-
-export default Trailers;
-
 // import { Link, useParams } from "react-router-dom";
 // import { Button } from "react-bootstrap";
 
