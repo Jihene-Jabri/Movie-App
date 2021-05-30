@@ -1,3 +1,17 @@
-/* .TrailerPage {
+.trailer {
+    display: flex;
+    justify-content: center;
+}
+.card {
+    padding: 10px;
+    justify-items: center;
+}
+/* #title {
     color: white;
+    justify-content: center;
+    margin-left: 500px;
 } */
+
+Card {
+    justify-content: space-between;
+}

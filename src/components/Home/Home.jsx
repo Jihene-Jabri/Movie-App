@@ -1,9 +1,10 @@
 import React from "react";
+import "./Home.css";
 
 function Home() {
     return (
-        <div>
-            <h1>Welcome</h1>
+        <div className="home">
+            <h1>Watch you favorite movies 😻 with US 🙌</h1>
         </div>
     );
 }

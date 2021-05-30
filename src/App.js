@@ -33,16 +33,20 @@ function App({ match }) {
     };
 
     return (
-        <div className="App">
-            <Header
-                getTitleSearch={getTitleSearch}
-                getRateSearch={getRateSearch}
-            />
-            <div className="app-body">
-                <AddModal handleAddMovie={handleAddMovie} />
-                <Switch>
+        <Switch>
+            <div className="App">
+                <Header
+                    getTitleSearch={getTitleSearch}
+                    getRateSearch={getRateSearch}
+                />
+
+                <div className="app-body">
+                    <AddModal handleAddMovie={handleAddMovie} />
+
                     <Route exact path="/" component={Home} />
+
                     <Route
+                        exact
                         path="/trailers"
                         render={() => (
                             <MoviesList
@@ -53,9 +57,9 @@ function App({ match }) {
                         )}
                     />
                     <Route path="/trailers/:id" render={() => <Trailer />} />
-                </Switch>
+                </div>
             </div>
-        </div>
+        </Switch>
     );
 }
 

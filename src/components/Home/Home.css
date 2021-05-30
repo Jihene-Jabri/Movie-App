@@ -1,0 +1,14 @@
+.home {
+    color: white;
+    /* padding: 100px;
+    width: 550px;
+    justify-content: center;
+    text-align: center; */
+    border: 3px solid #ffff00;
+    display: flex;
+    justify-content: center;
+    width: 880px;
+    margin: 250px;
+    padding: 50px;
+    margin-top: 150px !important;
+}
